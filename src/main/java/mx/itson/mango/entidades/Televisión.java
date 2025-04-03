@@ -11,6 +11,7 @@ package mx.itson.mango.entidades;
 public class Televisión extends DispositivoElectrónico {
     private int pulgadas;
     private int volumenActual;
+    private Resolución resolucion;
     
     public Televisión(String marca, String modelo, String color, int pulgadas, int volumenActual) {
         super(marca, modelo, color);

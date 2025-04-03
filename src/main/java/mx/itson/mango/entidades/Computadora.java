@@ -12,6 +12,7 @@ public class Computadora extends DispositivoElectrónico {
     
     private int memoriaRAM;
     private int espacioDisco;
+    private Impresora impresora;
     
     public Computadora(String marca, String modelo, String color, int memoriaRAM, int espacioDisco) {
         super(marca, modelo, color);
@@ -19,7 +20,7 @@ public class Computadora extends DispositivoElectrónico {
         this.espacioDisco = espacioDisco;
     }
     
-    public int descargarArchivo(int cantidad) {
+    public int ajustarMemoria(int cantidad) {
         int resultado = this.espacioDisco - cantidad;
         this.espacioDisco = resultado;
         return this.espacioDisco;

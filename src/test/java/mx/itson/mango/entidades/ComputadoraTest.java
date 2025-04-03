@@ -19,6 +19,22 @@ public class ComputadoraTest {
     
     public ComputadoraTest() {
     }
+
+    @org.junit.jupiter.api.BeforeAll
+    public static void setUpClass() throws Exception {
+    }
+
+    @org.junit.jupiter.api.AfterAll
+    public static void tearDownClass() throws Exception {
+    }
+
+    @org.junit.jupiter.api.BeforeEach
+    public void setUp() throws Exception {
+    }
+
+    @org.junit.jupiter.api.AfterEach
+    public void tearDown() throws Exception {
+    }
     
     @BeforeAll
     public static void setUpClass() {
@@ -46,6 +62,20 @@ public class ComputadoraTest {
         Computadora pc = new Computadora("Asus", "Ninja2000", "Blanca", 128, 1024);
         int expResult = 524;
         int result = pc.descargarArchivo(cantidad);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /**
+     * Test of ajustarMemoria method, of class Computadora.
+     */
+    @org.junit.jupiter.api.Test
+    public void testAjustarMemoria() {
+        System.out.println("ajustarMemoria");
+        int cantidad = 500;
+        Computadora pc = new Computadora("Asus", "Ninja2000", "Blanca", 128, 1024);
+        int expResult = 524;
+        int result = pc.ajustarMemoria(cantidad);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
