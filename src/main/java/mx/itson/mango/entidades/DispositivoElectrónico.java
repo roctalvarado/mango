@@ -8,7 +8,7 @@ package mx.itson.mango.entidades;
  *
  * @author rocta
  */
-public class DispositivoElectrónico {
+public abstract class DispositivoElectrónico {
     private String marca;
     private String modelo;
     private String color;
@@ -22,4 +22,7 @@ public class DispositivoElectrónico {
     public String encender() {
         return "El dispositivo electrónico está encendido";
     }
+    
+    public abstract double calcularDepreciacion(double precio);
+    
 }

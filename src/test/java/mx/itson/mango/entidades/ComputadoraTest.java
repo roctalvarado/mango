@@ -36,48 +36,19 @@ public class ComputadoraTest {
     public void tearDown() throws Exception {
     }
     
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
     /**
-     * Test of descargarArchivo method, of class Computadora.
+     * Test of dismunuirEspacio method, of class Computadora.
      */
     @Test
-    public void testDescargarArchivo() {
-        System.out.println("descargarArchivo");
-        int cantidad = 500;
-        Computadora pc = new Computadora("Asus", "Ninja2000", "Blanca", 128, 1024);
-        int expResult = 524;
-        int result = pc.descargarArchivo(cantidad);
+    public void testDismunuirEspacio() {
+        System.out.println("dismunuirEspacio");
+        int cantidad = 0;
+        Computadora instance = null;
+        String expResult = "";
+        String result = instance.dismunuirEspacio(cantidad);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
-     * Test of ajustarMemoria method, of class Computadora.
-     */
-    @org.junit.jupiter.api.Test
-    public void testAjustarMemoria() {
-        System.out.println("ajustarMemoria");
-        int cantidad = 500;
-        Computadora pc = new Computadora("Asus", "Ninja2000", "Blanca", 128, 1024);
-        int expResult = 524;
-        int result = pc.ajustarMemoria(cantidad);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }

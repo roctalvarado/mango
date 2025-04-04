@@ -27,4 +27,15 @@ public class Televisión extends DispositivoElectrónico {
             return "El valor debe ser mayor a 0 y menor a 100";
         }
     }
+    
+    @Override
+    public String encender() {
+        return "La televisión está cargando";
+    }
+    
+    @Override
+    public double calcularDepreciacion(double precio) {
+        return precio * 0.05;
+    }
+    
 }

@@ -20,9 +20,23 @@ public class Computadora extends DispositivoElectrónico {
         this.espacioDisco = espacioDisco;
     }
     
-    public int ajustarMemoria(int cantidad) {
+    public String dismunuirEspacio(int cantidad) {
+        if (cantidad > espacioDisco) {
+            return "El tamaño del archivo excede el espacio disponible";
+        } else {
+            this.espacioDisco -= cantidad;
+            return "La cantidad total del espacio actualizado es " + this.espacioDisco;
+        }
+        /*
         int resultado = this.espacioDisco - cantidad;
         this.espacioDisco = resultado;
         return this.espacioDisco;
+        */
     }
+    
+    @Override
+    public double calcularDepreciacion(double precio) {
+        return precio * 0.12;
+    }
+    
 }
